@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "ParkDN",
+    "slug": "park-dn",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/car.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff",
+      "barStyle": "dark-content"
+    },
+    "android": {
+      "package": "com.fenilkaneria.parkspot",
+      "versionCode": 1
+    },
+    "description": "Parking Application",
+    "githubUrl": "https://github.com/fenil29/virtual-parking-for-park-spot-react"
+  }
+}

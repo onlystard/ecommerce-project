@@ -1,0 +1,120 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+}
+.outer-container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #c5c5c5;
+}
+
+.container-border {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  /* box-shadow: 5px 5px 12px #dedede, -5px -5px 12px #ffffff; */
+}
+
+.select-parking-lot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.select-parking-lot h1 {
+  margin-bottom: 40px;
+}
+.select-parking-lot > div {
+  width: 60%;
+}
+
+.parking-lot-info {
+  padding: 20px;
+}
+.qrcode-container {
+  display: flex;
+  margin-top: 20px;
+}
+.qrcode-container h2 {
+  margin-bottom: 30px;
+}
+.entry-qrcode {
+  padding: 20px;
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.exit-qrcode {
+  padding: 20px;
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.parking-spot-container {
+  margin-top: 20px;
+  padding: 20px;
+}
+.parking-spot-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.spot-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.parking-spot {
+  border: 1px solid rgb(194, 194, 194);
+  /* margin: 10px; */
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.spot-color-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.spot-color-info-occupied {
+  padding: 10px;
+  background-color: red;
+  border-radius: 5px;
+}
+.spot-color-info-empty {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+}
+
+.parking-spot-filled {
+  background-color: rgba(255, 0, 0, 0.753);
+}
+@media only screen and (max-width: 600px) {
+  .qrcode-container {
+    flex-direction: column;
+  }
+}

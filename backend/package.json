@@ -1,0 +1,24 @@
+{
+  "name": "park-spot-backend-node",
+  "version": "1.0.0",
+  "description": "parking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.0.0",
+    "body-parser": "*",
+    "consolidate": "*",
+    "dotenv": "^8.2.0",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.6.0"
+  }
+}
