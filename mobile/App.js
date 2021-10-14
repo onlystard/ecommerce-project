@@ -1,35 +1,21 @@
-import React from "react";
-import {
-  ApplicationProvider,
-  IconRegistry,
-  Layout,
-  Text
-} from "@ui-kitten/components";
-import { View } from "react-native";
-import { EvaIconsPack } from "@ui-kitten/eva-icons";
-import { mapping, light as lightTheme } from "@eva-design/eva";
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-import MainNavigator from "./navigation/MainNavigator";
-import GlobalState from "./context/GlobalState";
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
 
-import Colors from "./constants/colors";
-
-const HomeScreen = () => (
-  <Layout style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text category="h1">HOME</Text>
-  </Layout>
-);
-
-lightTheme["color-primary-500"] = Colors.primary;
-const App = () => (
-  <GlobalState>
-    <IconRegistry icons={EvaIconsPack} />
-    <ApplicationProvider mapping={mapping} theme={lightTheme}>
-      <Layout style={{ flex: 1, marginTop: 20 }}>
-        <MainNavigator />
-      </Layout>
-    </ApplicationProvider>
-  </GlobalState>
-);
-
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
